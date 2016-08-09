@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <h3>{{page.title}} <small> (<a href="PLACEHOLDER_URL_TITLE/similar">Similar</a>)</small></h3>
+  <h4>by <a href="/wiki/users/{{page.author.id}}">{{page.author.name}}</a></h4>
+  <div>{{page.tags.join(', ')}}</div>
+  <hr/>
+  <div class="page-body">{{page.content}}</div>
+  <hr/>
+  <a href="PLACEHOLDER_URL_TITLE/edit" class="btn btn-primary">edit this page</a>
+  <a href="PLACEHOLDER_URL_TITLE/delete" class="btn btn-danger">delete this page</a>
+{% endblock %}

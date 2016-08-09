@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<ul>
+  {% for user in users %}
+    <li><a href="wiki/users/{{ user.id }}">{{ user.name }}</a></li>
+  {% endfor %}
+</ul>
+{% endblock %}
